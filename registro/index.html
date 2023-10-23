@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/registro.index.css">
+    <link rel="shortcut icon" href="/assets/image/ucm-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/main.user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Formulário de Registro - UCM</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="h2-title">UCM</h2>
+            <ul id="menu">
+                <li>Servico Online</li>
+                <li>Apoio</li>
+                <li class="right">Todos Direitos Reservdos 2023</li>
+            </ul>
+            <i class="fa fa-bars" id="open"></i>
+        </nav>
+    </header>
+    <form id="registion" class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <h2 class="h2">Dados Pessoais <i class="fa fa-user"></i></h2>
+            <div class="input">
+                <label for="name">Nome: <span>*</span></label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="input">
+                <label for="surname">Apelido: <span>*</span></label>
+                <input type="text" id="surname" required>
+            </div>
+            <div class="input">
+                <label for="data">Data de nascimento: <span>*</span></label>
+                <input type="date" id="data" required>
+            </div>
+            <div class="input">
+                <label for="genero">Genero: <span>*</span></label>
+                <select id="genero" required>
+                    <option value="" disabled>----Selecione uma opcao----</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Outros">Outros</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="endereco">Endereço: <span>*</span></label>
+                <input type="text" id="endereco" required>
+            </div>
+            <div class="input">
+                <label for="identificacao">Número de Identificação: <span>*</span></label>
+                <input type="text" id="identificacao">
+            </div>
+            <div class="input">
+                <label for="nacional">Nacionalidade: <span>*</span></label>
+                <select id="nacional">
+                    <option value="Mozambique">Moçambique</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="province">Provincia: <span>*</span></label>
+                <select id="provincias" required>
+                    <option value="" disabled>----Selecione uma opcao----</option>
+                    <option value="Maputo">Maputo</option>
+                    <option value="Gaza">Gaza</option>
+                    <option value="Inhambane">Inhambane</option>
+                    <option value="Nampula">Nampula</option>
+                    <option value="Zambézia">Zambezia</option>
+                    <option value="Manica">Manica</option>
+                    <option value="Sofala">Sofala</option>
+                    <option value="Tete">Tete</option>
+                    <option value="Niassa">Niassa</option>
+                    <option value="Cabodelgado">Cabo Delgado</option>
+                    <option value="Maputocidade">Maputo Cidade</option>
+                </select>
+            </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <h2 class="h2">Informações de Contato <i class="fa fa-phone-square-alt"></i></h2>
+                    <div class="input">
+                        <label for="email">Email: <span>*</span></label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="password">Password: <span>*</span></label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div class="input">
+                        <label for="telefone">Números de telefone: <span>*</span></label>
+                        <input type="tel" id="telefone" required>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <h2 class="h2">Dados Acadêmicos <i class="fa fa-book"></i></h2>
+                    <div class="input">
+                        <label for="universidade">Universidade: <span>*</span></label>
+                        <select id="universidade" required>
+                            <option value="UCM">Universidade Católica de Moçambique</option>
+                            <option value="UEM">Universidade Eduardo Mondlane</option>
+                            <option value="UPM">Universidade Pedagógica Moçambique</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="faculdade">Extenxao/Faculdade: <span>*</span></label>
+                        <select id="faculdade" required>
+                            <option value="Engenharia">Faculdade de Engenharia</option>
+                            <option value="Saude">Faculdade de Saúde</option>
+                            <option value="Economia">Faculdade de Economia</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="curso">Curso: <span>*</span></label>
+                        <select id="curso">
+                            <optgroup label="Engenharia">
+                                <option value="eng_mecanica">Engenharia Mecânica</option>
+                                <option value="eng_eletrica">Engenharia Elétrica</option>
+                                <option value="eng_civil">Engenharia Informatica</option>
+                                <option value="">Engenharia De Redes</option>
+                            </optgroup>
+                            <optgroup label="Saúde">
+                                <option value="medicina">Medicina</option>
+                                <option value="enfermagem">Enfermagem</option>
+                                <option value="odontologia">Odontologia</option>
+                            </optgroup>
+                            <optgroup label="Economia">
+                                <option value="economia">Economia</option>
+                                <option value="admin_empresas">Administração de Empresas</option>
+                                <option value="ciencias_contabeis">Ciências Contábeis</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="faculdade">Ano de frequência: <span>*</span></label>
+                        <select name="frequencia" id="freuencia" required>
+                            <option value="" disabled>----Selecione o ano----</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="pagamento">Modalidade de pagamentos: <span>*</span></label>
+                        <select id="pagamento" required>
+                            <option value="" disabled>----Selecione o ano----</option>
+                            <option value="5.595.00">Mensal = 5.595.00MT</option>
+                            <option value="13.758.00">Trimestral = 13.758.00MT</option>
+                            <option value="27.516.00">Semestral = 27.516.0MT</option>
+                            <option value="55.032.00">Anual = 55.032.00MT</option>
+                        </select>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="Inscrever-se">  
+                    </div>
+                </div>
+            </div>        <footer>Todos Direitos Resevados 2023</footer>
+        </div>
+
+        <div class="modal" id="loading">
+            <div class="bg">
+                <div class="loading">
+                    <div class="load"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+        <script>
+        let visivel = false;
+
+        const iconMenu = document.getElementById('open');
+        const menu = document.getElementById('menu');
+
+        iconMenu.addEventListener('click', function() {
+            visivel = !visivel;
+            menu.style.display = visivel ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
